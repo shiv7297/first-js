@@ -37,11 +37,53 @@ const myFunction = function(){
 }
 
 
-console.log(typeof score);
-console.log(typeof bigNumer);
-console.log(typeof isloggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof heros);
-console.log(typeof myFunction);   // object function
+// console.log(typeof score);
+// console.log(typeof bigNumer);
+// console.log(typeof isloggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof heros);
+// console.log(typeof myFunction);   // object function
+
+
+// **************************************************
+
+
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let myEmail = "shiv@google.com"
+
+let anotherMail = myEmail
+
+// console.log(myEmail);
+// console.log(anotherMail);
+
+anotherMail = "abc@google.com"
+// console.log(myEmail);
+// console.log(anotherMail);
+
+myEmail = "xyz@google.com"
+// console.log(myEmail);
+// console.log(anotherMail);
+
+let userOne = {
+    email: "shiv@google.com",
+    upi: "shiv@ybl"
+}
+
+let userTwo = userOne
+
+console.log(userOne);
+console.log(userTwo);
+
+userTwo.email = "abc@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+userOne.email = "xyz@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
