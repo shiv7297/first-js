@@ -89,11 +89,11 @@ console.log(Instructor);
 
 
 //JSON
-{
-    "name": "Shiv",
-    "coursename": "JS in Hindi",
-    "price": "free"
-}
+// {
+//     "name": "Shiv",
+//     "coursename": "JS in Hindi",
+//     "price": "free"
+// }
 
 [
     {},
