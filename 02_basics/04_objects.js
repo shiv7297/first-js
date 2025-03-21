@@ -57,14 +57,46 @@ const users = [
     }
 ]
 
-console.log(users[1].email)
+// console.log(users[1].email)
 
-console.log(tinderUser); 
+// console.log(tinderUser); 
 
-console.log(Object.keys(tinderUser));  
-console.log(Object.values(tinderUser));  
-console.log(Object.entries(tinderUser)); 
+// console.log(Object.keys(tinderUser));  
+// console.log(Object.values(tinderUser));  
+// console.log(Object.entries(tinderUser)); 
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));  
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));  
 
 
+
+
+// *************************************Destructuring***********************
+const courses = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "shiv"
+}
+
+// console.log(courses.courseInstructor);
+
+const {courseInstructor} = courses
+console.log(courseInstructor);
+
+const {courseInstructor:Instructor} = courses
+console.log(Instructor);
+
+//***************API INTRO***************
+
+
+//JSON
+{
+    "name": "Shiv",
+    "coursename": "JS in Hindi",
+    "price": "free"
+}
+
+[
+    {},
+    {},
+    {}
+]
