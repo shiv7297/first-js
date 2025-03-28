@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h1>Learning Javascript</h1>
+    <button id="stop">Stop</button>
+</body>
+    <script>
+        setTimeout(function () {    // passing fucntion as callback
+            console.log("Shiv");
+            
+        },5000);
+
+
+        const sayNidhi = function(){
+            console.log("Nidhi");   
+        }
+
+        setTimeout(sayNidhi,2000)  //fucntion can also be passed as reference
+
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = "best web developer"
+        }
+        const changeMe = setTimeout(changeText,5000)
+
+        document.querySelector("#stop").addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log("Stoppedd, Text doesn't change");
+            
+        })
+    </script> 
+</html>
+
+<!--set time out is a fucntion which also calls a api
+
+call back fucntion doesn't require a name-->
