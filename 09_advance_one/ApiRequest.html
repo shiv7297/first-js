@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    Learning javascript
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/shiv7297'
+    var xhr = new XMLHttpRequest()
+    console.log("1",xhr.readyState); 
+
+    // isi method ke andar saari ready states wgehra hoti hain aur isi ke through ham request send kar skte hain  and receive kar skte hain 
+    xhr.open('GET',requestURL)        //open hi request ko bhejta hai and open avail tab hoga ja ham xml http request type bna lenge 
+    console.log("2",xhr.readyState);
+
+    // open() apne aap me call nhi hota
+    xhr.send()   // ab call hua
+    console.log("3",xhr.readyState);          // ye output me current state deta hai
+
+    // xhr.onreadystatechange = function(){
+    //     console.log(xhr.readyState);             // jab state chage hogi tab ye output dega
+    //      if(xhr.readyState === 4){
+    //         console.log( this.responseText);
+    //         console.log( typeof this.responseText);
+    //         console.log(this.responseText.follower);  // ye dega undefined kyunki type check krega to aaega string(mostly)
+    //     }
+    // }
+
+    // ise conver krna pdega JSON me kyunki ye hai JSON data
+
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);             // jab state chage hogi tab ye output dega
+         if(xhr.readyState === 4){
+            let data =  JSON.parse(this.responseText)
+            console.log(data);
+            console.log( typeof data);
+            console.log(data.followers);  // ye dega undefined kyunki type check krega to aaega string(mostly)
+        }
+        if(xhr.readyState === 4){
+            console.log( JSON.parse(this.responseText));
+            console.log( typeof JSON.parse(this.responseText));
+            console.log(JSON.parse(this.responseText).followers); 
+        }
+    }
+
+            
+       
+    
+</script>
+</html>
