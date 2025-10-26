@@ -12,9 +12,10 @@ let age = 19
 
 
 // number = 2 to the power 53
+//binint
 // string = ""
 //boolean = t/f
-//null = standalone value
+//null = standalone value   ->type is object
 //undefined = no value assigned yet
 //symbol = unique
 

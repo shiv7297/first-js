@@ -3,30 +3,30 @@ const count = 500
 
 //console.log(name + count + "Value");
 
-console.log(`Hello my name is ${name} and my count is ${count}`);
+console.log(`Hello my name is ${name} and my count is ${count}`); //follow this 
 
 
 const gameName = new String("Po-ke-mon-go")
 
-console.log(gameName);
+/* console.log(gameName);
 
 console.log(gameName[0]);
 
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
-console.log(gameName.charAt(4));
+console.log(gameName.charAt(4)); */
 
-console.log(gameName.indexOf('o'));
-console.log(gameName.indexOf('o'));
+/* console.log(gameName.indexOf('o'));
+console.log(gameName.indexOf('o')); */
 
 const newString = gameName.substring(0,4)
 console.log(newString);
 
-const anotherString = gameName.slice(-1,-7)
+const anotherString = gameName.slice(-9,-2) // this works l to r
 console.log(anotherString);
 
 const stringOne = "           Shiv         "
-console.log(stringOne.trim());
+/* console.log(stringOne.trim()); */
 
 const url = "https://shiv.com/shiv%20pratap"
 
