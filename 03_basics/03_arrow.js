@@ -32,7 +32,7 @@ const two = function(){
 // two()
 
 
-//*************** Arrow Function 
+//*************** Arrow Function ******************************
 
 const arrowFunc = () => {
     let username = "Shiv"
@@ -60,8 +60,8 @@ const addTwoimpl = (num1,num2 ,num3) => num1 + num2 + num3
 
 console.log(addTwoimpl(3,4,5));
 
-const example = (num1,num2 ) => {username: "Shiv"}     //this is the correct way for oblect 
-                                                        // but arrow fucntion doesn't return withour parantheses
+const example = (num1,num2 ) => {username: "Shiv"}     //this is the correct way for object 
+                                                        // but arrow fucntion doesn't return without parantheses
 console.log(example(3,4))  // undefined
 const example1 = (num1,num2 ) => ({username: "Shiv"})
 

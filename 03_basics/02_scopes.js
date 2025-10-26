@@ -49,6 +49,8 @@ function addone (num){
     return num + 1
 }
 
+
+//hoisting
 console.log(addTwo(5));  // can't call the fucntion before initialization because it was declared oin different way
 const addTwo = function(num){
     return num + 2
