@@ -5,7 +5,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "Anant"
 tinderUser.isLoggedIn = false
 
-//console.log(tinderUser);
+console.log(tinderUser);
 
 
 const User = {
@@ -18,20 +18,22 @@ const User = {
     }
 }
 
-// console.log(User.fullname.userfullname.firstname);
+console.log(User.fullname.userfullname.lastname);
 
 
 const obj1 = { 1: "a", 2: "b"}
 const obj2 = { 3: "c", 4: "d"}
 
-//const obj3 = {obj1,obj2}    // same array wali problem
+const obj3 = {obj1,obj2}    // same array wali problem
 
-//const obj3 = Object.assign({},obj1,obj2)   // {} is aise hi (hehehe)
+const obj4 = Object.assign({},obj1,obj2)   // {} is aise hi (hehehe)
 // becuase assign(target,source);
 
-const obj3 = {...obj1,...obj2}
+const obj5 = {...obj1,...obj2}
 
-//console.log(obj3); 
+console.log(obj3); 
+console.log(obj4); 
+console.log(obj5); 
 
 
 const users = [
@@ -57,15 +59,15 @@ const users = [
     }
 ]
 
-// console.log(users[1].email)
+console.log(users[1].email)
 
-// console.log(tinderUser); 
+console.log(tinderUser); 
 
-// console.log(Object.keys(tinderUser));  
-// console.log(Object.values(tinderUser));  
-// console.log(Object.entries(tinderUser)); 
+console.log(Object.keys(tinderUser));  
+console.log(Object.values(tinderUser));  
+console.log(Object.entries(tinderUser)); 
 
-// console.log(tinderUser.hasOwnProperty("isLoggedIn"));  
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));  
 
 
 

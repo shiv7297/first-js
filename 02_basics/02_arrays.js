@@ -24,7 +24,9 @@ console.log(realArr);
 
 console.log(Array.isArray("Shiv"))
 console.log(Array.from("Shiv"))
-console.log(Array.from({name:"Shiv"}))
+
+const obj = {name:"Shiv"};
+console.log(Array.from(Object.keys(obj)))
 
 
 let s1 = 1
