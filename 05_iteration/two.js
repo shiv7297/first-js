@@ -27,10 +27,10 @@ map.set('NZ',"NewZealand")
 
 for (const [key,value] of map) {
     //console.log(key, ':-', value);
-    
-}
+        
+        }
 
-//objects are not iterable by forof loop
+//objects are not iterable by for of loop
 const myObj = {
     game1: "Pokemon",
     game2: "Spiderman"
@@ -59,7 +59,7 @@ for (const key in programming) {
    
 }
 
-
+//for in loop me keys aati hai and for of loop me vlaues
 //map is not iteratable so for in loop can't run on map
 
 

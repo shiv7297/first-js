@@ -10,6 +10,7 @@ const values = coding.forEach( (item) => {
 
 //***************************FILTER**********
 
+//filter return values unlike foreach loop
 const nums = [1,2,3,4,5,6,7,8,9]
 
 const newNums = nums.filter((num) => (
@@ -18,7 +19,7 @@ const newNums = nums.filter((num) => (
 //console.log(newNums);
 
 //heheheheh
-// when you open scoope then return word is must
+// when you open scope then return word is must
 const newNums1 = nums.filter((num) => {
    return num > 5 })
 
