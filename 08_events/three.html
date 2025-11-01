@@ -15,18 +15,27 @@
         const sayDate = function(str){
         console.log(str,Date.now());
        }
-       let intervalId;
 
-       document.querySelector("#start").addEventListener("click",function(){
-        intervalId = setInterval(sayDate,2000,"Hii")
-        console.log("started");
-        
-       })
+      let intervalId = null;
 
-       document.querySelector("#stop").addEventListener("click",function(){
-        clearInterval(intervalId)
-        console.log("stopped");
-       })
+        document.querySelector("#start").addEventListener("click", function () {
+        // Only start if not already running
+        if (intervalId === null) {
+            intervalId = setInterval(sayDate, 2000, "Hii");
+            console.log("started");
+        } else {
+            console.log("Already running!");
+        }
+        });
+
+        document.querySelector("#stop").addEventListener("click", function () {
+        if (intervalId !== null) {
+            clearInterval(intervalId);
+            intervalId = null; // reset so it can start again later
+            console.log("stopped");
+        }
+        });
+
 
        
     </script> 
