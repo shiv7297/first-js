@@ -40,7 +40,7 @@ function user(username,logIncount,isLoggedIn) {
 const userOne = user("Shiv",9,true)
 const userTwo = user("Harshit",2,false)
 
-// agar bina new ke nya isntanvce bnaenge tod ye overwrite kar dega
+// agar bina new ke nya isntance bnaenge to ye overwrite kar dega
 // userOne overwrite ho gya hai user two ki details se
 // isliye use new(constructor)
 

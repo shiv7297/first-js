@@ -23,7 +23,7 @@ createUser.prototype.printMe = function() {
 }
 
 const shiv  = new createUser("shiv",25)
-const nidhi = new createUser("nidhi",25)
+const nidhi = new createUser("dikshit",25)
 
 
 shiv.printMe()
