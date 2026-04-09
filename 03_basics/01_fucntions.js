@@ -53,7 +53,7 @@ function loginMessage(username = "Nidhi"){
 
 // ...  --> spread operator // ... --> rest operator
 
-function calculateCartPrice(val1,val2,...num1){//rest 
+function calculateCartPrice(val1,val2,...num1){//rest -> allows to pass multiple vals and store them in array
     return num1
 }
 

@@ -30,7 +30,7 @@ for (const [key,value] of map) {
         
         }
 
-//objects are not iterable by for of loop
+//objects are not iterable by for of loop even by [key, val]
 const myObj = {
     game1: "Pokemon",
     game2: "Spiderman"

@@ -51,8 +51,7 @@ function addone (num){
 
 
 //hoisting
-console.log(addTwo(5));  // can't call the fucntion before initialization because it was declared oin different way
+console.log(addTwo(5));  // can't call the fucntion before initialization because it is expression
 const addTwo = function(num){
     return num + 2
-}                                  // also a fucntion but declared in different way
-                                   // also called expression
+}

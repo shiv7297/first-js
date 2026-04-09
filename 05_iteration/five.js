@@ -9,3 +9,16 @@ const newNums = myNumbers
 
 console.log(newNums);
 
+//map != Map
+
+
+//************************reduce**************** */
+
+const myNums = [1,2,3];
+
+const total = myNums.reduce(function (acc, curr){
+    console.log(`acc is ${acc} and curr is ${curr}`);
+    return acc + curr;
+},10);
+
+console.log(total);

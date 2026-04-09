@@ -12,13 +12,13 @@ const marvelHeros = ["Thor","IronMan","CaptainAmerica"]
 // console.log(marvelHeros);
 
 
-const allNewHeros = [...marvelHeros,...dcHeros]
+const allNewHeros = [...marvelHeros,...dcHeros] //spreads all the elements now they are individual elements
 // console.log(allNewHeros);
 
 
 const anotherArr = [1,2,3,[4,5,6],7,[8,9,[10,11]]]
 
-const realArr = anotherArr.flat(Infinity)    //this Infinity means all the depths
+const realArr = anotherArr.flat(Infinity)    //this Infinity means all the , we can give the length according to the requirement
 console.log(realArr);
 
 

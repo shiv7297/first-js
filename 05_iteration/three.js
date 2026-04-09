@@ -2,7 +2,7 @@
 
 const coding = ["js","ruby","java","python"]
 
-//call back funtion ka nam nhi hota
+//call back funtion ka nam nhi hota while defining at the place (got it??)
 coding.forEach(  function (item) {    // fucntion yhin ke yhin likha hai so no name
     //console.log(item);
     
